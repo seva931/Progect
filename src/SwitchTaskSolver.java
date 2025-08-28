@@ -40,21 +40,23 @@ public class SwitchTaskSolver {
             default:
                 System.out.println("Ошибка: введите число от 1 до 7");
         }
-        scanner.close();
     }
 
     public static void ticketPrice () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число от 1 до 7");
         int day = scanner.nextInt();
-        if (day >= 1 && day <= 5) {
-            System.out.println("300 рублей");
-        } else if (day == 6 || day == 7) {
-            System.out.println("450 рублей");
-        } else {
-            System.out.println("Ошибка: введите число от 1 до 7");
+        switch (day) {
+            case 1,2,3,4,5:
+                System.out.println("Будний день. Цена билета: 350р");
+                break;
+            case 6, 7:
+                System.out.println("Выходной день. Цена билета: 450р");
+                break;
+            default:
+                System.out.println("Некорректный номер дня. Введите число от 1 до 7");
         }
-        scanner.close();
+
     }
 
     public static void evaluation() {
@@ -74,7 +76,6 @@ public class SwitchTaskSolver {
         } else {
             System.out.println("Ошибка: введите число от 0 до 100");
         }
-        scanner.close();
     }
 
     public static void command() {
@@ -86,7 +87,7 @@ public class SwitchTaskSolver {
                 System.out.println("Система запущена");
                 break;
             case "stop":
-                System.out.println("Система приастоновлена");
+                System.out.println("Система приостановлена");
                 break;
             case "restart":
                 System.out.println("Система перезапущена");
@@ -97,7 +98,6 @@ public class SwitchTaskSolver {
             default:
                 System.out.println("Неизвестная команда");
         }
-        scanner.close();
     }
 
     public static void calculator() {
@@ -134,7 +134,6 @@ public class SwitchTaskSolver {
                 System.out.println("Ошибка");
 
         }
-        scanner.close();
 
     }
 

@@ -23,7 +23,6 @@ public class WhileTaskSolver {
             i++;
         }
         System.out.println(result);
-        scanner.close();
     }
 
     public static void evenNumberN() {
@@ -38,7 +37,6 @@ public class WhileTaskSolver {
             i++;
 
         }
-        scanner.close();
     }
 
     public static void backN() {
@@ -55,7 +53,6 @@ public class WhileTaskSolver {
 
         }
 
-        scanner.close();
     }
 
     public static void numberPositive() {
@@ -69,7 +66,6 @@ public class WhileTaskSolver {
             }
         } while (a <= 0);
         System.out.println("Ваше число: " + a);
-        scanner.close();
     }
 
     public static void password() {
@@ -81,7 +77,6 @@ public class WhileTaskSolver {
             string = scanner.nextLine();
         } while (!string.equals(password));
         System.out.println("Добро пожаловать");
-        scanner.close();
     }
 
     public static void numberOneTeanDo() {
@@ -100,12 +95,11 @@ public class WhileTaskSolver {
             string = scanner.nextLine();
         } while (!string.equals("exit"));
         System.out.println("Успешно");
-        scanner.close();
     }
 
     public static void countingTheNumbers() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ввидте число");
+        System.out.println("Введите число");
         int scan = scanner.nextInt();
         int sum = 0;
         if (scan == 0) {

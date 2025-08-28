@@ -22,7 +22,6 @@ public class IfTaskSolver {
         } else {
             System.out.println("Число равно нулю");
         }
-        scanner.close();
     }
 
     public static void checkNumberMax() {
@@ -36,7 +35,6 @@ public class IfTaskSolver {
         } else {
             System.out.println(b);
         }
-        scanner.close();
     }
 
     public static void checkNumberOneFive() {
@@ -54,7 +52,6 @@ public class IfTaskSolver {
         } else {
             System.out.println("Неудовлетворительно");
         }
-        scanner.close();
     }
 
     public static void numberCheckParity() {
@@ -66,7 +63,6 @@ public class IfTaskSolver {
         } else {
             System.out.println(a + " Нечетное");
         }
-        scanner.close();
     }
 
     public static void discond() {
@@ -80,7 +76,6 @@ public class IfTaskSolver {
         } else {
             System.out.println("Скидка недоступна");
         }
-        scanner.close();
     }
 
     public static void checkBall() {
@@ -98,7 +93,6 @@ public class IfTaskSolver {
         } else {
             System.out.println("Неудовлетворительно");
         }
-        scanner.close();
     }
 
 }

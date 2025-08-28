@@ -6,7 +6,7 @@ public class ForTaskSolver {
        // numberOneN();
        // multiplication();
        // numberOneTen();
-       // checkSimpleNumber();
+      // checkSimpleNumber();
 
     }
     public static void numberThree() {
@@ -53,7 +53,7 @@ public class ForTaskSolver {
             simple = false;
         } else {
             for (int i = 2; i <= a / 2; i++) {
-                if (a % 2 == 0) {
+                if (a % i == 0) {
                     simple = false;
                     break;
                 }
